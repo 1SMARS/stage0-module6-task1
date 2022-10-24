@@ -43,7 +43,12 @@ public class Animal {
 
 
     public String getDescription() {
-        return "This animal is mostly " + color + " It has " + numberOfPaws + " paw and " + " a " + hasFur ;
+        if (hasFur) {
+            return "This animal is mostly " + color + " It has " + numberOfPaws + " paw and" + " a fur";
+        }
+        else {
+            return "This animal is mostly " + color + " It has " + numberOfPaws + " paw and" + " no fur";
+        }
 
     }
 }
