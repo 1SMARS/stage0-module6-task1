@@ -20,9 +20,9 @@ class Bird extends Animal {
 
         else if (!hasFur) {
             if (numberOfPaws > 1)
-                return "This animal is mostly " + color + " It. has " + numberOfPaws + " paws and no fur. Moreover, it has " + numberOfPaws + " wings and can fly.";
+                return "This animal is mostly " + color + ". It has " + numberOfPaws + " paws and no fur. Moreover, it has " + numberOfPaws + " wings and can fly.";
             else
-                return "This animal is mostly " + color + " It. has " + numberOfPaws + " paw and no fur. Moreover, it has " + numberOfPaws + " wing and can fly.";
+                return "This animal is mostly " + color + ". It has " + numberOfPaws + " paw and no fur. Moreover, it has " + numberOfPaws + " wing and can fly.";
 
         }
         else
