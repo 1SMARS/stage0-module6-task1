@@ -1,6 +1,11 @@
 package com.epam.mjc.stage0;
 
 class Bird extends Animal {
+    
+    public Bird() {
+        
+    }
+    
     public Bird(String color, int numberOfPaws, boolean hasFur) {
         super(color, numberOfPaws, hasFur);
     }
