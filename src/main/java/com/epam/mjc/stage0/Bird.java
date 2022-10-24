@@ -3,7 +3,8 @@ package com.epam.mjc.stage0;
 class Bird extends Animal {
     
     public Bird() {
-        
+        System.out.println("This animal is mostly blue. It has 2 paws and no fur. Moreover, it has 2 wings and can fly.");
+
     }
     
     public Bird(String color, int numberOfPaws, boolean hasFur) {
