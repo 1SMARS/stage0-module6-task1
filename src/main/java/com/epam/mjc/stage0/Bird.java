@@ -12,17 +12,17 @@ class Bird extends Animal {
 
     @Override
     public String getDescription() {
-        if (hasFur)
-                if (numberOfPaws > 1)
-                    return "This animal is mostly " + color + ". It has " + numberOfPaws + " paws and a fur. Moreover, it has " + numberOfPaws + " wings and can fly.";
+        if (isHasFur())
+                if (getNumberOfPaws() > 1)
+                    return "This animal is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and a fur. Moreover, it has " + getNumberOfPaws() + " wings and can fly.";
                 else
-                    return "This animal is mostly " + color + ". It has " + numberOfPaws + " paw and a fur. Moreover, it has " + numberOfPaws + " wing and can fly.";
+                    return "This animal is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paw and a fur. Moreover, it has " + getNumberOfPaws() + " wing and can fly.";
 
-        else if (!hasFur) {
-            if (numberOfPaws > 1)
-                return "This animal is mostly " + color + ". It has " + numberOfPaws + " paws and no fur. Moreover, it has " + numberOfPaws + " wings and can fly.";
+        else if (!isHasFur()) {
+            if (getNumberOfPaws() > 1)
+                return "This animal is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paws and no fur. Moreover, it has " + getNumberOfPaws() + " wings and can fly.";
             else
-                return "This animal is mostly " + color + ". It has " + numberOfPaws + " paw and no fur. Moreover, it has " + numberOfPaws + " wing and can fly.";
+                return "This animal is mostly " + getColor() + ". It has " + getNumberOfPaws() + " paw and no fur. Moreover, it has " + getNumberOfPaws() + " wing and can fly.";
 
         }
         else
